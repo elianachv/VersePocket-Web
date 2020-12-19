@@ -1,14 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>VersePocket</title>
+    <!--Instalación Css Boostrap-->
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+    <!--Instalación Hoja de Estilo personalizada-->
+    <link rel="stylesheet" href="./css/index_style.css">
 </head>
 
 <body>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">VersePocket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav menu_opciones">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrarse <img class="menu_icon" src="./icon/icono_registro2.png" alt="registro"> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar Sesión <img class="menu_icon" src="./icon/icono_login2.png" alt="login"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!--Slider-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/img-slider4.png" class="d-block w-100" alt="slider1">
+                <div class="fondo"></div>
+                <div class="caption">
+                    <h2>Tu archivador de versículos personal</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/img-slider2.png" class="d-block w-100" alt="slider2">
+                <div class="fondo"></div>
+                <div class="caption">
+                    <h2>Tu bd de versículos personal</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/img-slider3.png" class="d-block w-100" alt="slider3">
+                <div class="fondo"></div>
+                <div class="caption">
+                    <h2>Tu bolsillo de versículos personal</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Descripcion-->
+    <section>
+        <div class="descripcion container-fluid">
+            <h2>¿Qué es VersePocket?</h2>
+            <h4>Tu archivador personal de versículos</h4>
+            <p>Una herramienta para que guardes, clasifiques y repases tus versículos de la Biblia favoritos.</p>
+
+        </div>
+    </section>
+
+    <!--Instalación Jquery-->
+    <script src="./plugins/jquery/jquery-3.3.1.min.js"></script>
+    <!--Instalación Js Bootstrap-->
+    <script src="./plugins/popper/popper.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

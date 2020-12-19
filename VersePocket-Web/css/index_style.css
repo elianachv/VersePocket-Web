@@ -1,0 +1,133 @@
+/*Fuentes*/
+
+@font-face {
+    font-family: raleway;
+    src: url("../font/Raleway-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: raleway-regular;
+    src: url("../font/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: raleway-semibold;
+    src: url("../font/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url("../font/OpenSansCondensed-Light.ttf");
+}
+
+@font-face {
+    font-family: open-sans-bold;
+    src: url("../font/OpenSansCondensed-Bold.ttf");
+}
+
+
+/*Navbar*/
+
+.menu {
+    background-color: transparent !important;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 25px;
+}
+
+.menu_icon {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+}
+
+.menu_opciones {
+    position: absolute;
+    right: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: raleway;
+    font-size: large;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-family: raleway;
+    font-style: bold;
+    font-size: 3vw;
+}
+
+
+/*Carrusel*/
+
+.carousel-item {
+    position: relative;
+    height: 100%;
+}
+
+.fondo {
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    top: 0;
+}
+
+.caption {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+}
+
+.caption h2 {
+    opacity: 1;
+    color: white;
+    font-size: 6.5vw;
+    z-index: 12;
+    text-align: center;
+    padding: 0 20px;
+    font-family: raleway-semibold;
+    font-style: bold;
+}
+
+
+/*Seccion Descripcion*/
+
+.descripcion {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 15px;
+}
+
+.descripcion h2 {
+    font-family: open-sans-bold;
+    color: #30475E;
+    font-size: 50px;
+}
+
+.descripcion h4 {
+    font-family: raleway-regular;
+    color: #F05454;
+    font-size: 30px;
+}
+
+.descripcion p {
+    font-family: raleway-regular;
+    color: black;
+    font-size: x-large;
+    padding: 0 20%;
+}
