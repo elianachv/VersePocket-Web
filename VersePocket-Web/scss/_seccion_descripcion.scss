@@ -11,11 +11,12 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    /* border: #30475E 2px solid;*/
+    position: relative;
+    /*border: #30475E 2px solid;*/
 }
 
 .row {
-    /* border: #30475E 2px solid;*/
+    /*border: #247acf 2px solid;*/
     margin: 0;
     padding: 0;
 }
@@ -38,28 +39,9 @@
     bottom: 0;
     /*border: #30475E 2px solid;*/
 
-    h2 {
-        font-family: open-sans-bold;
-        color: $color_texto_normal;
-        font-size: 50px;
-        margin-bottom: 10px;
-        padding: 0;
-    }
-
+    h2,
     h4 {
-        font-family: raleway-regular;
-        color: $color_secundario1;
-        font-size: 28px;
         margin-bottom: 10px;
-        padding: 0;
-    }
-
-    p {
-        font-family: raleway-regular;
-        color: $color_texto_normal;
-        font-size: 20px;
-        margin: 0;
-        padding: 0;
     }
 }
 
@@ -81,4 +63,21 @@
     /* border: #30475E 2px solid;*/
 }
 
+.separador_descripcion {
+    position: absolute;
+    top: 70%;
+    z-index: 500;
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(231, 57, 57) 2px solid;
 
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

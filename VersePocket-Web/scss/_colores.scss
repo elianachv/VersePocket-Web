@@ -1,9 +1,31 @@
-$color_principal1: #E8E8E8;
-$color_principal2: #F05454;
-$color_secundario1: #30475E;
+$color_principal1: #e8e8e8;
+$color_principal2: #f05454;
+$color_secundario1: #30475e;
 $color_secundario2: #222831;
-$color_texto_normal:#000;
+$color_texto_normal: #000;
 
-body{
+body {
     background: $color_principal1;
+}
+
+h2 {
+    font-family: open-sans-bold;
+    color: $color_texto_normal;
+    font-size: 50px;
+    padding: 0;
+}
+
+h4 {
+    font-family: raleway-regular;
+    color: $color_secundario1;
+    font-size: 28px;
+    padding: 0;
+}
+
+p {
+    font-family: raleway-regular;
+    color: $color_texto_normal;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
