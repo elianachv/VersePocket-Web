@@ -363,3 +363,63 @@ p {
     }
 }
 */
+.seccion_demo {
+  margin-top: 30px;
+  padding: 0;
+}
+
+.seleccion_versepocket {
+  background-color: #30475e;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.seleccion_versepocket h4 {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+.seleccion_versepocket p {
+  color: #000;
+  text-align: center;
+}
+
+.demo {
+  background-color: #222831;
+  border: #222831 solid;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.demo h4 {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.demo p {
+  color: #000;
+  text-align: center;
+  font-weight: normal;
+}
+
+.descripcion_demo {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.descripcion_demo h2,
+.descripcion_demo p {
+  text-align: right;
+}
+
+.botones_demo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.boton_demo {
+  background-color: #f05454;
+  color: #fff;
+  font-family: raleway-regular;
+  border-radius: 10px;
+  margin: 9px;
+}
