@@ -257,6 +257,7 @@ p {
 .botones-funcionalidades {
   width: 100%;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .boton_funcionalidad {
@@ -415,7 +416,7 @@ p {
 .separador_sumate_bottom {
   margin: 0;
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   z-index: 30;
   width: 100%;
 }
@@ -426,14 +427,14 @@ p {
 .separador_sumate_top {
   margin: 0;
   position: absolute;
-  top: 0;
+  top: -5px;
   z-index: 30;
   width: 100%;
 }
 .seccion_sumate {
   margin: 0;
-  padding-top: 5%;
-  padding-bottom: 9%;
+  padding-top: 15%;
+  padding-bottom: 15%;
   position: relative;
 }
 .seccion_sumate:before {
@@ -442,8 +443,8 @@ p {
   height: 100%;
   background-image: url(../img/fondo2.png);
   background-repeat: space;
-  background-position: 50% 10%;
-  opacity: 0.55;
+  background-position: 50% 30%;
+  opacity: 0.65;
   position: absolute;
   top: 0;
   left: 0;
@@ -456,7 +457,6 @@ p {
   align-items: center;
   z-index: 16;
 }
-
 .carrusel_testimonios .carousel-control-prev-icon,
 .carrusel_testimonios .carousel-control-next-icon {
   background-color: #C91616;
@@ -485,4 +485,59 @@ p {
   font-size: 15px;
   margin-top: 10px;
   font-weight: bold;
+}
+
+.seccion_propaganda {
+  background: #c91616;
+  background: linear-gradient(130deg, #c91616 26%, #30475e 76%);
+  margin-top: 50px;
+  padding-bottom: 10%;
+  position: relative;
+}
+.seccion_propaganda .row {
+  width: 70%;
+}
+
+.separador_promo {
+  margin: 0;
+  position: absolute;
+  bottom: -1;
+  z-index: 30;
+  width: 100%;
+}
+.propaganda {
+  margin: auto;
+}
+
+#img_propaganda {
+  width: 280px;
+  margin: auto;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.col_img_propaganda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+.col_texto_propaganda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+.texto_propaganda {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#boton_googleplay {
+  width: 75%;
+  margin: auto;
 }
