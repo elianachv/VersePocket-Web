@@ -219,6 +219,7 @@ p {
 .section_funcionalidades {
   background-color: #e8e8e8;
   margin-top: 20px;
+  margin-bottom: 0;
   padding: 0;
   display: flex;
   align-items: center;
@@ -350,19 +351,6 @@ p {
   height: 60%;
 }
 
-/*
-.carousel-indicators {
-    border: #30475e solid 3px;
-    position: relative;
-    background-color: #30475e;
-
-    li {
-        display: inline-block;
-        width: 50px;
-        position: relative;
-    }
-}
-*/
 .seccion_demo {
   margin-top: 30px;
   padding: 0;
@@ -417,21 +405,25 @@ p {
 }
 
 .boton_demo {
-  background-color: #f05454;
+  background-color: #C91616;
   color: #fff;
   font-family: raleway-regular;
   border-radius: 10px;
   margin: 9px;
 }
 
-.separador_sumate {
+.separador_sumate_bottom {
   margin: 0;
   position: absolute;
   bottom: 0;
   z-index: 30;
   width: 100%;
 }
-.separador_sumate2 {
+.separador_sumate_bottom img {
+  transform: rotateY(180deg);
+}
+
+.separador_sumate_top {
   margin: 0;
   position: absolute;
   top: 0;
@@ -440,8 +432,8 @@ p {
 }
 .seccion_sumate {
   margin: 0;
-  padding-top: 9%;
-  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 9%;
   position: relative;
 }
 .seccion_sumate:before {
@@ -457,9 +449,17 @@ p {
   left: 0;
 }
 
+.info_sumate {
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  z-index: 16;
+}
+
 .carrusel_testimonios .carousel-control-prev-icon,
 .carrusel_testimonios .carousel-control-next-icon {
-  background-color: #f05454;
+  background-color: #C91616;
   opacity: 0.55;
   border-radius: 50%;
   padding: 5px;
@@ -471,7 +471,7 @@ p {
   padding: 30px;
 }
 .testimonio h5 {
-  color: #f05454;
+  color: #C91616;
   font-family: open-sans;
   font-weight: bold;
   font-size: 25px;

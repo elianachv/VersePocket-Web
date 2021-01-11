@@ -1,4 +1,4 @@
-.separador_sumate {
+.separador_sumate_bottom{
     margin: 0;
     position: absolute;
     bottom: 0;
@@ -7,11 +7,11 @@
     width: 100%;
 
     img {
-        //transform: rotateX(180deg);
+        transform: rotateY(180deg);
     }
 }
 
-.separador_sumate2 {
+.separador_sumate_top {
     margin: 0;
     position: absolute;
     top:0 ;
@@ -27,11 +27,11 @@
 }
 .seccion_sumate {
     margin: 0;
-    padding-top: 9%;
-    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 9%;
     position: relative;
     //border: green 2px solid;
-
+  
     &:before {
         content: "";
         width: 100%;
@@ -46,6 +46,17 @@
         //box-shadow: -200px 0px inset $color_secundario2;
     }
 }
+
+.info_sumate{
+   // border: 2px fuchsia solid;
+    display: flex;
+    margin-top: 5%;
+    //margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 16;
+}
+
 .carrusel_testimonios {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
@@ -55,6 +66,7 @@
         padding: 5px;
     }
 }
+
 .testimonio {
     background-color: #fff;
     text-align: center;
