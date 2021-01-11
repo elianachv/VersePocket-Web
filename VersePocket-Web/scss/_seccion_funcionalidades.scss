@@ -3,6 +3,7 @@
 .section_funcionalidades {
     background-color: $color_principal1;
     margin-top: 20px;
+    margin-bottom: 0;
     padding: 0;
     display: flex;
     align-items: center;
@@ -146,16 +147,3 @@
     }
 }
 
-/*
-.carousel-indicators {
-    border: #30475e solid 3px;
-    position: relative;
-    background-color: #30475e;
-
-    li {
-        display: inline-block;
-        width: 50px;
-        position: relative;
-    }
-}
-*/
