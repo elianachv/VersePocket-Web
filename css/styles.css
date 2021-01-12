@@ -215,6 +215,19 @@ p {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .texto_descripcion {
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #img_descripcion {
+    margin: 0;
+    width: 90%;
+  }
+}
 /*Sección funcionalidades*/
 .section_funcionalidades {
   background-color: #e8e8e8;
@@ -228,7 +241,8 @@ p {
   height: 570px;
   position: relative;
 }
-.section_funcionalidades .carousel-control-prev-icon, .section_funcionalidades .carousel-control-next-icon {
+.section_funcionalidades .carousel-control-prev-icon,
+.section_funcionalidades .carousel-control-next-icon {
   background-color: #30475e;
   opacity: 0.55;
   border-radius: 50%;
@@ -281,8 +295,17 @@ p {
   color: #000;
 }
 
+.descripcion_funcionalidades {
+  margin: 0;
+  padding: 0;
+}
+
 .col_carrusel_funcionalidad {
   position: relative;
+  margin: 0;
+  padding: 0;
+  height: -webkit-fit-content;
+  height: fit-content;
 }
 
 .carrusel_guardar,
@@ -290,7 +313,10 @@ p {
 .carrusel_repasar {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 5%;
+  left: 12%;
+  margin: 0;
+  padding: 0;
 }
 
 .carrusel_clasificar,
@@ -301,8 +327,7 @@ p {
 }
 
 .carrusel_funcionalidad {
-  margin-left: 15%;
-  margin-top: 15px;
+  margin-top: 0;
   width: 90%;
   text-align: center;
 }
@@ -312,10 +337,10 @@ p {
 }
 
 .col_explicacion_funcionalidad {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .explicacion_funcionalidad {
@@ -352,6 +377,28 @@ p {
   height: 60%;
 }
 
+@media (max-width: 768px) {
+  .section_funcionalidades .row {
+    height: 1100px;
+  }
+
+  .explicacion_funcionalidad {
+    margin: 0;
+    padding: 10px;
+    top: 5%;
+  }
+
+  .texto_funcionalidades {
+    padding: 5%;
+  }
+
+  .carrusel_guardar,
+.carrusel_clasificar,
+.carrusel_repasar {
+    right: 5%;
+    left: 5%;
+  }
+}
 .seccion_demo {
   margin-top: 30px;
   padding: 0;
@@ -389,13 +436,14 @@ p {
   font-weight: normal;
 }
 
-.descripcion_demo {
+.col_descripcion_demo {
+  position: relative;
   display: flex;
   align-items: center;
-  margin-left: 50px;
+  justify-content: center;
 }
-.descripcion_demo h2,
-.descripcion_demo p {
+.col_descripcion_demo h2,
+.col_descripcion_demo p {
   text-align: right;
 }
 
@@ -413,6 +461,17 @@ p {
   margin: 9px;
 }
 
+@media (max-width: 950px) {
+  .descripcion_demo {
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+  }
+
+  .botones_demo {
+    justify-content: center;
+  }
+}
 .separador_sumate_bottom {
   margin: 0;
   position: absolute;
@@ -487,6 +546,12 @@ p {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .info_sumate {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
 .seccion_propaganda {
   background: #c91616;
   background: linear-gradient(130deg, #c91616 26%, #30475e 76%);

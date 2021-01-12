@@ -14,9 +14,10 @@
         position: relative;
     }
 
-    .carousel-control-prev-icon, .carousel-control-next-icon{
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
         background-color: $color_secundario1;
-        opacity: .55;
+        opacity: 0.55;
         border-radius: 50%;
         padding: 5px;
     }
@@ -68,10 +69,16 @@
     border: solid $color_secundario2;
     color: $color_texto_normal;
 }
-
+.descripcion_funcionalidades {
+    margin: 0;
+    padding: 0;
+}
 .col_carrusel_funcionalidad {
     position: relative;
-    //border: orangered 2px solid;
+    margin: 0;
+    padding: 0;
+    // border: orangered 2px solid;
+    height: fit-content;
 }
 
 .carrusel_guardar,
@@ -79,7 +86,11 @@
 .carrusel_repasar {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 5%;
+    left: 12%;
+    margin: 0;
+    padding: 0;
+    //border: 2px blue solid;
 }
 
 .carrusel_clasificar,
@@ -90,8 +101,8 @@
 }
 
 .carrusel_funcionalidad {
-    margin-left: 15%;
-    margin-top: 15px;
+    //margin-left: 15%;
+    margin-top: 0;
     width: 90%;
     text-align: center;
     //border: solid red 2px;
@@ -105,10 +116,10 @@
 }
 
 .col_explicacion_funcionalidad {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     //border: solid yellowgreen 2px;
 }
 
@@ -148,3 +159,28 @@
     }
 }
 
+@media (max-width: 768px) {
+    .section_funcionalidades {
+        .row {
+            height: 1100px;
+        }
+    }
+
+    .explicacion_funcionalidad {
+        margin: 0;
+        padding: 10px;
+        top: 5%;
+    }
+
+    .texto_funcionalidades {
+        padding: 5%;
+    }
+
+    .carrusel_guardar,
+    .carrusel_clasificar,
+    .carrusel_repasar {
+        right: 5%;
+        left: 5%;
+        //border: 2px blue solid;
+    }
+}

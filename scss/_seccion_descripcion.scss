@@ -81,3 +81,19 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .texto_descripcion{
+        margin: 0;
+        padding-left: 0;
+        text-align: center;
+
+       
+    }
+
+    #img_descripcion{
+        margin: 0;
+        width: 90%;
+    }
+}

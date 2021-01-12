@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.seleccion_versepocket{
+.seleccion_versepocket {
     background-color: $color_secundario1;
     padding: 20px;
     margin-bottom: 15px;
@@ -37,11 +37,13 @@
     }
 }
 
-.descripcion_demo {
+.col_descripcion_demo {
+    position: relative;
     //border: yellow 2px solid;
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    justify-content:  center;
+    //margin-left: 50px;
     h2,
     p {
         text-align: right;
@@ -53,6 +55,7 @@
     justify-content: flex-end;
     // border: yellow 2px solid;
     margin-top: 12px;
+
 }
 
 .boton_demo {
@@ -61,4 +64,19 @@
     font-family: raleway-regular;
     border-radius: 10px;
     margin: 9px;
+
+}
+
+
+@media (max-width: 950px) {
+    .descripcion_demo {
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+
+    .botones_demo{
+        justify-content: center;
+
+    }
 }
