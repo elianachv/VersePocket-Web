@@ -606,3 +606,63 @@ p {
   width: 75%;
   margin: auto;
 }
+
+.info_final {
+  margin: 25px;
+}
+
+.container_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  page-break-after: auto;
+}
+
+#logo_footer {
+  width: 200px;
+  padding: 10px;
+}
+
+.barra_redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barra_redes img {
+  height: 30px;
+  width: 30px;
+  opacity: 0.8;
+  margin: 5px 10px;
+}
+
+.verso_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.verso_footer p {
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  font-family: open-sans;
+}
+
+.copyright {
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright_info {
+  margin: 20px;
+}
+.copyright_info p {
+  color: #fff;
+  text-align: center;
+  font-weight: 10;
+}
+.copyright_info a {
+  color: #C91616;
+}
