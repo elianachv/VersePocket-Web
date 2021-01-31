@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VersePocket</title>
+    <link rel="icon" href="/icon/logo.png">
+    <!--Instalación Css Boostrap-->
+    <link rel="stylesheet" type="text/css" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <!--Instalación Hoja de Estilo personalizada-->
+    <link rel="stylesheet" href="/css/versepocket.css">
+</head>
+
+<body>
+    <!--Barra de opciones-->
+    <nav class="navbar navbar-expand-lg menu">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/inicio">VersePocket <br> de {{usuario.nombre}}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/inicio"><img class="menu_icon" src="/icon/icono_inicio.svg"
+                                alt="inicio"><br>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/categorias"><img class="menu_icon" src="/icon/icono_categorias.svg"
+                                alt="categorias"><br>Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/versiculos"><img class="menu_icon" src="/icon/icono_versiculos.svg"
+                                alt="versiculos"><br>Versículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="menu_icon" src="/icon/icono_repaso.svg"
+                                alt="repaso"><br>Repaso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="menu_icon" src="/icon/icono_configuraciones.svg"
+                                alt="configuraciones"><br>Configuraciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="menu_icon" src="/icon/icono_ayuda.svg"
+                                alt="ayuda"><br>Instrucciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cerrar-sesion"><img class="menu_icon" src="/icon/icono_salir.svg"
+                                alt="salir"><br>Salir</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    {{> mensajes}}
+    {{> errores}}
+
+
+    {{{body}}}
+
+    <footer>
+        <div class="copyright">
+            <div class="copyright_info">
+                <p>VersePocket copyright - Todos los derechos reservados 2021</p>
+                <p>
+                    Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a>
+                    from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+                </p>
+                <p>Desarrollado por <a href="https://www.flaticon.es/" title="Eliana Chávez">Eliana Chávez</a></p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!--Instalación Jquery-->
+    <script src="/plugins/jquery/jquery-3.3.1.min.js "></script>
+    <!--Instalación Js Bootstrap-->
+    <script src="/plugins/popper/popper.min.js "></script>
+    <script src="/plugins/bootstrap/js/bootstrap.min.js "></script>
+</body>
+
+</html>

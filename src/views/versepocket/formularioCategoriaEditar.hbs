@@ -1,0 +1,34 @@
+<body>
+    <div class="descripcion">
+        <h1 class="titulo display-4">{{modo}} Categoría</h1>
+    </div>
+
+    {{#each error}}
+    <div class="alert alert-danger alert-dismissible fade show mensaje_error" role="alert">
+        <strong>LLEGO LA CATEGORIA</strong> {{texto}}.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {{/each}}
+
+
+    <div class="container formulario">
+        <form action="/categoria/editar/{{categoria._id}}?_method=PUT" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+            <div class="mb-3">
+                <label for="campoNuevoNombre" class="form-label">Nombre</label>
+                <input type="text" name="nombre" placeholder="Digita un nombre alusivo" class="form-control"
+                    id="campoNuevoNombre" aria-describedby="campoNuevoNombreTip" value="{{categoria.nombre}}" autofocus>
+                <div id="campoNuevoNombreTip" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="campoNuevaDescripcion" class="form-label">Descripción</label>
+                <textarea type="text" name="descripcion" class="form-control"
+                    placeholder="Puedes agregar una descripción corta" id="campoNuevaDescripcion"
+                    aria-describedby="campoNuevaDescripcionTip">{{categoria.descripcion}}</textarea>
+                <div id="campoNuevaDescripcionTip" class="form-text">No puedes exceder los 40 carácteres
+                </div>
+            </div>
+            <button type="submit" class="btn">{{modo}}</button>
+        </form>
+    </div>
+</body>

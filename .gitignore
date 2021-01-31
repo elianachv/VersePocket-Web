@@ -1,3 +1,2 @@
-codigo.txt
-prepros.config
-css/index_style.css
+node_modules/
+src/public/prepros.config

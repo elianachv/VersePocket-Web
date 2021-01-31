@@ -1,7 +1,11 @@
 footer {
     //border: solid blue 7px;
+
+    a{
+        text-decoration: solid;
+    }
 }
-.info_final{
+.info_final {
     margin: 25px;
 }
 .container_logo {
@@ -44,30 +48,24 @@ footer {
     }
 }
 
-.copyright{
+.copyright {
     background-color: $color_secundario2;
     display: flex;
     justify-content: center;
     align-items: center;
     //border: solid greenyellow 5px;
-
 }
 
-.copyright_info{
+.copyright_info {
+    margin: 20px;
 
-    margin:20px;
-
-
-    p{
+    p {
         color: #fff;
         text-align: center;
         font-weight: 10;
-
     }
 
-    a{
+    a {
         color: $color_principal2;
     }
-
-
 }

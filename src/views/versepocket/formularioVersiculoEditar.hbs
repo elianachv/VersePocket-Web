@@ -1,0 +1,29 @@
+<body>
+    <div class="descripcion">
+        <h1 class="titulo display-4">Editar Versículo</h1>
+    </div>
+    <div class="container formulario">
+        <form action="/versiculo/editar/{{versiculo._id}}?_method=PUT" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+            <div class="mb-3">
+                <label for="campoCitaVerso" class="form-label">Cita</label>
+                <input type="text" name="cita" class="form-control" id="campoCitaVerso"
+                    aria-describedby="campoCitaVersoTip" value="{{versiculo.cita}}" disabled>
+                <div id="campoCitaVersoTip" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="campoTextoVerso" class="form-label">Texto</label>
+                <textarea type="text" name="texto" class="form-control" id="campoTextoVerso"
+                    aria-describedby="campoTextoVersoTip" disabled>{{versiculo.texto}}</textarea>
+                <div id="campoTextoVersoTip" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="campoComentarioVerso" class="form-label">Comentario</label>
+                <textarea type="text" name="comentario" class="form-control" id="campoComentarioVerso"
+                    aria-describedby="campoComentarioVersoTip">{{versiculo.comentario}}</textarea>
+                <div id="campoComentarioVersoTip" class="form-text"></div>
+            </div>
+            <button type="submit" class="btn">Editar versículo</button>
+        </form>
+    </div>
+</body>

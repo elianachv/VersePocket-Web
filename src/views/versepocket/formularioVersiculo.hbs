@@ -1,0 +1,28 @@
+<body>
+    <div class="descripcion">
+        <h1 class="titulo display-4">Crear Versículo Nuevo</h1>
+    </div>
+    <div class="container formulario">
+        <form action="/versiculo/crear" method="POST">
+            <div class="mb-3">
+                <label for="campoCitaVerso" class="form-label">Cita</label>
+                <input type="text" name="cita" class="form-control" id="campoCitaVerso"
+                    aria-describedby="campoCitaVersoTip">
+                <div id="campoCitaVersoTip" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="campoTextoVerso" class="form-label">Texto</label>
+                <textarea type="text" name="texto" class="form-control" id="campoTextoVerso"
+                    aria-describedby="campoTextoVersoTip"></textarea>
+                <div id="campoTextoVersoTip" class="form-text">Por ahora debes copiar y pegar el versículo</div>
+            </div>
+               <div class="mb-3">
+                <label for="campoComentarioVerso" class="form-label">Comentario</label>
+                <textarea type="text" class="form-control" id="campoComentarioVerso"
+                    aria-describedby="campoComentarioVersoTip"></textarea>
+                <div id="campoComentarioVersoTip" class="form-text"></div>
+            </div>
+            <button type="submit" class="btn">Crear versículo</button>
+        </form>
+    </div>
+</body>

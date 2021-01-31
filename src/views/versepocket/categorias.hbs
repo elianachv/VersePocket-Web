@@ -1,0 +1,51 @@
+<body>
+
+    <div class="descripcion">
+        <h1 class="titulo display-4">Mis Categorías</h1>
+    </div>
+
+    <div class="container categorias">
+        <div class="row fila_categorias justify-content-center">
+            {{#each categorias}}
+            <div class="col-sm">
+                <a href="/categoria/{{_id}}">
+                    <div class="carta-box">
+                        <div class="carta">
+                            <div class="cara">
+                                <img src="/img/bolsillo.svg" width="250px" height="250px">
+                                <div class="nombre_categoria">
+                                    <h3>{{nombre}}</h3>
+                                </div>
+                            </div>
+                            <div class="cara detras">
+                                <div class="descripcion_categoria">
+                                    <p>{{descripcion}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{else}}
+            <div class="jumbotron">
+                <h1 class="display-4">Sin categorías</h1>
+                <hr class="my-4">
+                <p class="lead">Aun no has creado ninguna categoría, intenta añadir una nueva</p>
+                <a class="btn boton" href="/categoria/crear" role="button">Crear</a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    {{#if categorias}}
+    <div class="opciones">
+        <div>
+            <a href="/categoria/crear">
+                <img class="opcion" src="./icon/icono_crear.svg" alt="crear">
+                <p>Crear nueva</p>
+            </a>
+        </div>
+    </div>
+    {{/if}}
+
+</body>

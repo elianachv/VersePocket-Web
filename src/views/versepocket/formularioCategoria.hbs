@@ -1,0 +1,26 @@
+<body>
+    <div class="descripcion">
+        <h1 class="titulo display-4">{{modo}} Categoría</h1>
+    </div>
+   
+    <div class="container formulario">
+        <form action="/categoria/crear" method="POST">
+            <div class="mb-3">
+                <label for="campo_nombre_categoria" class="form-label">Nombre</label>
+                <input type="text" name="nombre" placeholder="Digita un nombre alusivo" class="form-control"
+                    id="campo_nombre_categoria" aria-describedby="campo_nombre_categoria_tip" autofocus>
+                <div id="campo_nombre_categoria_tip" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="campo_descripcion_categoria" class="form-label">Descripción</label>
+                <textarea type="text" name="descripcion" class="form-control"
+                    placeholder="Puedes agregar una descripción corta" id="campo_descripcion_categoria"
+                    aria-describedby="campo_descripcion_categoria_tip"></textarea>
+                <div id="campo_descripcion_categoria_tip" class="form-text">No puedes exceder los 40 carácteres</div>
+
+            </div>
+
+            <button type="submit" class="btn">{{modo}}</button>
+        </form>
+    </div>
+</body>

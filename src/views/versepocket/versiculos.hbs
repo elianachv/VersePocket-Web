@@ -1,0 +1,33 @@
+<body>
+    <div class="descripcion">
+        <h1 class="titulo display-4">Mis Versículos</h1>
+    </div>
+
+    <div class="container versiculos">
+        <ul class="list-group lista_versiculos">
+            {{#each versiculos}}
+            <a class="versiculo_item" href="/versiculo/{{_id}}">
+                <li class="list-group-item">{{cita}}</li>
+            </a>
+            {{/each}}
+        </ul>
+    </div>
+    {{#if versiculos}}
+    <div class="opciones">
+        <a href="/versiculo/crear">
+            <div>
+                <img class="opcion" src="/icon/icono_crear.svg" alt="crear">
+                <p>Crear nuevo</p>
+            </div>
+        </a>
+    </div>
+    {{else}}
+    <div class="jumbotron" style="width: 70%; margin: auto;">
+        <h1 class="display-4">Sin versículos</h1>
+        <hr class="my-4">
+        <p class="lead">Aún no has creado ningún versículo, intenta añadir uno nuevo</p>
+        <a class="btn boton" href="/versiculo/crear" role="button">Crear</a>
+    </div>
+    <br><br><br>
+    {{/if}}
+</body>

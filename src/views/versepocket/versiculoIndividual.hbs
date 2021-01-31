@@ -1,0 +1,62 @@
+<body>
+    <div class="descripcion">
+        <h1 class="titulo cita_versiculo display-4">{{versiculo.cita}}</h1>
+        <p class="texto_versiculo">{{versiculo.texto}}</p>
+    </div>
+
+    <div class="container detalles_versiculo">
+        <ul class="">
+            <li class="detalle_versiculo">Fecha de creación:<br><span class="detalle_descripcion">
+                    <p>{{versiculo.fecha}}</p>
+                </span></li>
+            <li class="detalle_versiculo">Comentario:<br>
+                <span class="detalle_descripcion">
+                    <p>{{versiculo.comentario}}</p>
+                </span>
+            </li>
+            <li class="detalle_versiculo">Categorías asociadas:<br>
+                <span class="detalle_descripcion">
+                    <div class="container">
+                        <ul class="list-group list-group-flush categorias_asociadas">
+                            <li class="list-group-item">Fe</li>
+                            <li class="list-group-item">Esperanza</li>
+                        </ul>
+                    </div>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="opciones">
+        <a href="/versiculo/editar/{{versiculo._id}}">
+            <div>
+                <img class="opcion" src="/icon/icono_editar.svg" alt="editar">
+                <p>Editar</p>
+            </div>
+        </a>
+
+        <form action="/versiculo/eliminar/{{versiculo._id}}?_method=DELETE" method="POST">
+            <div>
+                <input type="hidden" name="_method" value="DELETE">
+                <button class="boton_eliminar" type="submit">
+                    <img class="opcion" src="/icon/icono_eliminar.svg" alt="eliminar">
+                    <p>Eliminar</p>
+                </button>
+            </div>
+        </form>
+
+        <a href="">
+            <div>
+                <img class="opcion" src="/icon/icono_ordenar.svg" alt="ordenar">
+                <p>Ordenar</p>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <img class="opcion" src="/icon/icono_repaso2.svg" alt="repasar">
+                <p>Repasar</p>
+            </div>
+        </a>
+    </div>
+
+</body>

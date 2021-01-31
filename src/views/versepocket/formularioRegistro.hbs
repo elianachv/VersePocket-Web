@@ -1,0 +1,54 @@
+<body>
+
+    <div class="row justify-content-center registro">
+        <h1 class="titulo display-4">Registrate gratis en VersePocket</h1>
+        <div class="col-sm col-lg-4">
+            <img src="/img/img_promocional1.jpeg" alt="img_promocional1">
+        </div>
+        <div class="col-sm col-lg-4">
+            <div class="container">
+                <p class="descripcion">Accede a todos los beneficios de VersePocket</p>
+                <ul class="beneficios_registro">
+                    <li>Lleva tus versículos a todas partes</li>
+                    <li>Clasifica tus versículos favoritos para que los encuentres en el momento oportuno</li>
+                    <li>No pierdas tus versículos, obten un respaldo de los mismos</li>
+                    <li>Memoriza tus versículos con las opciones de repaso que tenemos para ti</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm col-lg-4">
+            <div class="container formulario formulario2">
+                <form action="/registro" method="POST">
+                    <div class="mb-3">
+                        <input type="text" name="nombre" placeholder="Nombre" class="form-control" id="nombreUsuario"
+                            aria-describedby="nombreTip" {{#if nombre}} value={{nombre}} {{/if}} autofocus required>
+
+                        <div id="nombreTip" class="form-text">Puedes incluir tu apellido</div>
+
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="correo" placeholder="Correo electrónico" class="form-control"
+                            id="correoUsuario" aria-describedby="correoTip" {{#if correo}} value={{correo}} {{/if}}
+                            required>
+                        <div id="correoTip" class="form-text">Este será tu usuario para ingresar</div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" name="contrasena" placeholder="Contraseña" class="form-control"
+                            id="contrasenaUsuario" aria-describedby="contrasenaTip" {{#if contrasena}}
+                            value={{contrasena}} {{/if}} required>
+                        <div id="contrasenaTip" class="form-text">Debe tener entre 8 y 16 carácteres</div>
+
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" name="confirmacion" placeholder="Confirma la contraseña"
+                            class="form-control" id="confirmacionUsuario" {{#if confirmacion}} value={{confirmacion}}
+                            {{/if}} required>
+                    </div>
+                    <button type="submit" class="btn">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>

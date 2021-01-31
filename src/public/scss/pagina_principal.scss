@@ -1,0 +1,63 @@
+.saludo {
+    text-align: center;
+    font-family: raleway-semibold;
+    color: $color_secundario1;
+    //padding: 15px;
+}
+
+.jumbotron {
+    margin: 50px 0;
+    border: $color_secundario1 solid;
+    border-radius: 20px;
+    padding: 5%;
+    z-index: 500;
+    position: relative;
+
+    h5 {
+        font-family: raleway-regular;
+        color: $color_secundario1;
+        //font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .row {
+        //border: blueviolet solid;
+        margin-top: 10px;
+    }
+}
+
+.datosbd {
+    // margin-top: 20px;
+}
+
+.dato {
+    span {
+        color: black;
+    }
+}
+
+.verso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    p {
+        font-style: italic;
+    }
+    //border: green solid;
+}
+.datos_usuario {
+    width: 75%;
+    margin: auto;
+}
+.col-sm {
+    //border: blue 2px solid;
+}
+
+@media (max-width: 768px) {
+    .datosbd,
+    .lead {
+        text-align: center;
+        //margin-bottom: 20px;
+    }
+}

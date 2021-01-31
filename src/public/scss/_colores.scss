@@ -29,3 +29,27 @@ p {
     margin: 0;
     padding: 0;
 }
+
+a{
+    text-decoration: none;
+}
+
+.boton {
+    background-color: $color_secundario1;
+    color: $color_principal1;
+    font-weight: normal;
+    border-radius: 16px;
+    border: solid darken($color_secundario1, 10%) 3px;
+    margin-top: 15px;
+    width: 30%;
+
+    &:hover {
+        background-color: $color_principal1;
+        color: $color_secundario1;
+        border-radius: 16px;
+        border: solid darken($color_secundario1, 10%) 3px;
+    }
+}
+
+
+
