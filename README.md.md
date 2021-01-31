@@ -2,6 +2,7 @@
 Sitio web y aplicativoo web de la aplicación móvil VersePocket
 
 ## Descripción de archivos
+
 ### node_modules
 Carpeta en donde residen todo los módulos de node implementados en el proyecto para su funcionamiento
 #### Módulos Node utilizados
@@ -14,20 +15,23 @@ Mantiene los datos de un usuario en sesiones
 #####  moongoose
 Administra la conexión con la base de datos de MongoDB
 #####  passport
+Permite la gestion de las sesiones de los usuarios logueados
 #####  passport-local
+Almacena los datos del usuario logueado
 #####  method-override
 Permite que los formularios puedan enviar más tipos de metodos y no solamente get y post
 #####  bcryptjs
 Encripta las contraseñas de los usuarios para brindar una mayor seguridad
 #####  connect-flash 
+Permite el despliegue de mensajes para el usuario
 #####  nodemon
 Permite la reinicialización del sevidor de manera automatica cuando ocurra un cambio. Facilita el desarrollo de la aplicación.
-
 
 ### src
 Es la carpeta en donde se encuentra todo el codigo fuente de la aplicación
 
 #### config
+Es la carpeta en donde se configuran servicios especificos en este proyecto se configura el modulo passport
 
 #### public
 En esta carpeta se encuentra todo el código Front-End estático es decir la página web de VersePocket dado que solo es informativa. 
@@ -40,8 +44,8 @@ En esta carpeta se codifican y exportan todas las rutas de la aplicación, es de
 
 #### views
 En esta carpeta se almacenan las plantillas html, es decir los archivos html que comparten todos los usuarios pero en el cual se desplegará la información de cada uno de ellos de manera dinámica (recopilada de la bd). 
-- La carpeta layaouts
-- La carpeta partials
+- La carpeta layaouts: son las plantillas para elementos repetitivos como barras y footers
+- La carpeta partials: son plantillas de elementos casuales, en este proyecto se usa para mostrar mensajes a los usuarios
 
 #### index.js
 Es el archivo principal que levanta y administra el servidor 
