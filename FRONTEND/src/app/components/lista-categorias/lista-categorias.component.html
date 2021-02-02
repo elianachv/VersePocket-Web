@@ -1,0 +1,47 @@
+<app-barra-principal></app-barra-principal>
+<div class="descripcion">
+    <h1 class="titulo display-4">Mis Categorías</h1>
+</div>
+
+<div class="container categorias">
+    <div class="row fila_categorias justify-content-center" *ngIf="categorias; else elseBlock">
+        <div class="col-sm" *ngFor="let categoria of categorias">
+            <a (click)="guardarCategoriaLocal(categoria)">
+                <div class="carta-box">
+                    <div class="carta">
+                        <div class="cara">
+                            <img src="../../../assets/img/bolsillo.svg" width="250px" height="250px">
+                            <div class="nombre_categoria">
+                                <h3>{{categoria.nombre}}</h3>
+                            </div>
+                        </div>
+                        <div class="cara detras">
+                            <div class="descripcion_categoria">
+                                <p>{{categoria.descripcion}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <ng-template #elseBlock>
+        <div class="row fila_categorias justify-content-center">
+            <div class="jumbotron">
+                <h1 class="display-4">Sin categorías</h1>
+                <hr class="my-4">
+                <p class="lead">Aun no has creado ninguna categoría, intenta añadir una nueva</p>
+                <a class="btn boton" href="/categoria/crear" role="button">Crear</a>
+            </div>
+        </div>
+    </ng-template>
+</div>
+
+<div class="opciones" *ngIf="categorias">
+    <div>
+        <a routerLink="/categorias/crear">
+            <img class="opcion" src="../../../assets/icon/icono_crear.svg" alt="crear">
+            <p>Crear nueva</p>
+        </a>
+    </div>
+</div>
