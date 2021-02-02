@@ -1,0 +1,43 @@
+
+.info_final {
+    margin: 25px;
+}
+.container_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    page-break-after: auto;
+}
+
+#logo_footer {
+    width: 200px;
+    padding: 10px;
+}
+
+.barra_redes {
+    display: flex;
+    //border: solid red 2px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 30px;
+        width: 30px;
+        opacity: 0.8;
+        margin: 5px 10px;
+    }
+}
+
+.verso_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-style: normal;
+        font-size: 30px;
+        text-align: center;
+        padding: 20px;
+        font-family: open-sans;
+    }
+}
